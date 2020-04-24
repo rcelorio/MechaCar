@@ -1,0 +1,11 @@
+Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+
+The multiple linear regression model produced an r-squared value of 0.7149. We can assume from this result that roughly 29% of mpg predictions from this model will be correct. Vehicle weight, with a p score of .08, is the only variable to provide nonrandom variance to mpg.
+
+Is the slope of the linear model considered to be zero? Why or why not?
+The slope of the regression cannot be zero because there is a significant relationship between vehicle weight and miles per gallon. We can reject our null hypothesis.
+
+Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+
+The model demonstrates statistically significant relationship between vehicle weight and miles per gallon. We can infer from the r-squared value that vehicle weight is not the only factor required to predict MPG. We would need to look at other variables to create a more robust predictive model.                                                                     
+
