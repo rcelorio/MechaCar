@@ -1,19 +1,33 @@
 
 ## MPG Regression
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+We performed a multiple linear regression on the MechaCar prototype mpg dataset to answer the following questions: 
 
-The multiple linear regression model produced an r-squared value of 0.7149. We can assume from this result that roughly 29% of mpg predictions from this model will be correct. Vehicle weight, with a p score of .08, is the only variable to provide nonrandom variance to mpg.
+* Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+* Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+* Is the slope of the linear model considered to be zero? Why or why not?
 
-Is the slope of the linear model considered to be zero? Why or why not?
-The slope of the regression cannot be zero because there is a significant relationship between vehicle weight and miles per gallon. We can reject our null hypothesis.
 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+The summary output for the regression shows that vehicle length and ground clearance coefficients are statistically unlikely to provide random amounts of variance to the linear model. The summary also shows that intercept is significant, indicating other variables and factors contribute to the variation of mpg not accounted for in the model. 
 
-The model demonstrates statistically significant relationship between vehicle weight and miles per gallon. We can infer from the r-squared value that vehicle weight is not the only factor required to predict MPG. We would need to look at other variables to create a more robust predictive model.                                                                     
+The multiple linear regression model produced an r-squared value of 0.7149. We can assume from this result that roughly 71% of mpg predictions from this model will be correct. 
+The p-value of 5.35e-11 is much smaller than our assumed significance level 0f 0.05%. Therefore, we can state that there is sufficient evidence to reject our null hypothesis, which means that the slope of our linear model is not zero.
+
+ 
 ## Suspension Coil Summary
 
-The current manufacturing data meets design specifications based on a calculated variance of 62.29.
+* Summary Statistics Table of PSI data by Lot
++-------+------+--------+--------+-------+
+| Lot#  | Mean | Median | VAR    | SD    |
++-------+------+--------+--------+-------+
+| Lot 1 | 1500 | 1500   | .98    | .99   |
++-------+------+--------+--------+-------+
+| Lot 2 | 1500 | 1500   | 7.47   | 2.73  |
++-------+------+--------+--------+-------+
+| Lot 3 | 1496 | 1498   | 170.29 | 13.05 |
++-------+------+--------+--------+-------+
+
+Lots 1 and 2 meet design specification of less than 100 pounds per inch for the MechaCar suspension coil. Lot 3 does not meet design specification with a variance of 170.29. This variance is extreme in comparison to lots 1 and 2. Recommend an audit of the manufacturing process to determine the source of the variance. 
 
 ## Suspension Coil T-Test
 
@@ -29,4 +43,5 @@ mean of x
   1498.78 
 
 The p-value of 0.06 is higher than the assumed significance level of 0.05. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
 
