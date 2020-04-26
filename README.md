@@ -11,7 +11,7 @@ We performed a multiple linear regression on the MechaCar prototype mpg dataset 
 
 The summary output for the regression shows that vehicle length and ground clearance coefficients are statistically unlikely to provide random amounts of variance to the linear model. The summary also shows that intercept is significant, indicating other variables and factors contribute to the variation of mpg not accounted for in the model. 
 
-![Vehicle Lenght and MPG](LenghtAndMPG.png)
+![Vehicle Lenght and MPG](LengthAndMPG.png)
 ![Ground Clearance and MPG](ClearanceAndMPG.png)
 
 The multiple linear regression model produced an r-squared value of 0.7149. We can assume from this result that 71% of mpg predictions from this model will be correct. 
