@@ -49,4 +49,10 @@ Lots 1 and 2 meet design specification of less than 100 pounds per inch for the 
 
 Further analysis of the lots via a one sample t-Test shows the p-value of 0.06 for the combined lots is higher than the assumed significance level of 0.05. Lot’s 1 and 2 also produced significant p-scores of 1 and .6072 respectively. Lot 3 produced a p-score of .0417 which falls below the significance level. We do not have sufficient evidence to reject the null hypothesis for the combined lots and lots 1 and 2, and we would state that the means are statistically similar. We have sufficient evidence for lot 3 to fail to reject the null hypothesis and state that the means are statistically different. 
 
+## Design Your Own Study
 
+In these times of economic uncertainty, consumers will prioritize fuel efficiency in relation to price. We recommend the company collect MPG information and price of vehicle class competitors. This data is readily available from www.fueleconomy.gov and other reputable sources. 
+
+The team can perform a two-sample t-test to compare the mean MPG of the competitors to the MechaCar results. The null hypothesis of this study states the mean MPG of the MechaCar is not different from competitors at the same price point. The alternative hypothesis states the mean mpg of the MechaCar is different than competitors at the same price point. 
+
+If the null hypothesis is true, we can assume the MechaCar’s performance and price is in line with the market. If the alternative hypothesis is true further analysis is required to determine the correct price point for the MechaCar.
