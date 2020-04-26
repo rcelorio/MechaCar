@@ -55,14 +55,21 @@ print(STDD)
 Var = var(Lot3$PSI) # variance
 print(Var)
 
+# refactor
+
+PSI_Lots <- Suspension[,c("Manufacturing_Lot","PSI")]
+PSI_Lots$PSI <- factor(PSI_Lots$PSI) #convert numeric column to factor
+
+aov(PSI_Lots$PSI ~ PSI_Lots$Manufacturing_Lot, data=PSI_Lots) #compare means across multiple levels
+
 
 ##Suspension Coil T-Test
-suspension_sample_1 <- Suspension %>% sample_n(50) #generate random sample of 50 data points
-suspension_sample_2 <- Suspension %>% sample_n(50) #generate another sampled of 50 data points
-
-TSummary = t.test(log10(suspension_sample_1$PSI),log10(suspension_sample_2$PSI)) #compare the means of two samples
 
 print(t.test(Suspension$PSI, mu=1500)) # Print the T test
+print(t.test(Lot1$PSI, mu=1500)) # Print the T test
+print(t.test(Lot2$PSI, mu=1500)) # Print the T test
+print(t.test(Lot3$PSI, mu=1500)) # Print the T test
+
 
 
 
