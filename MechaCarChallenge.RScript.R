@@ -15,7 +15,7 @@ model <- lm(MechaCar$`vehicle length` ~ MechaCar$mpg,MechaCar) #create linear mo
 yvals <- model$coefficients["MechaCar$mpg"]*MechaCar$mpg + model$coefficients['(Intercept)'] #determine y-axis values
 
 plt20 <- ggplot(MechaCar,aes(x=mpg,y=`vehicle length`)) + ggtitle("Vehicle Lenght and MPG") #import dataset into ggplot
-#plt20 <- plt20 + ggtitle("Vehicle Lenght and MPG")
+
 plt20 + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
 
 
